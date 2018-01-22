@@ -52,6 +52,8 @@ function logMessage(username, timestamp, url) {
 
 print("logMessage");
 test(logMessage("Yogesh", "16:20", "http://petshop.com/pets/reptiles/pythons"), "Yogesh accessed the site http://petshop.com/pets/reptiles/pythons at 16:20.");
+test(logMessage("John", "19:20", "http://petshop.com/pets/reptiles/javascript"), "John accessed the site http://petshop.com/pets/reptiles/javascript at 19:20.");
+test(logMessage("Steph", "21:20", "http://petshop.com/pets/reptiles/sql"), "Steph accessed the site http://petshop.com/pets/reptiles/sql at 21:20.");
 print(separator);
 
 // Ex 1
@@ -63,7 +65,7 @@ print(separator);
     insert additional new lines between the greeting, message, and signature
 */
 function formatLetter(recipient, sender, emailBody) {
-	return "Hello " +  recipient + ",\\n\\n" + emailBody + "\\n\\nSincerely,\\n" + sender;
+	return null;
 }
 print("formatLetter");
 test(formatLetter("James", "Richard", "Things are well."), "Hello James,\\n\\nThings are well.\\n\\nSincerely,\\nRichard");
